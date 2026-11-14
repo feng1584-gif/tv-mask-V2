@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="36dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Google TV 字幕遮罩控制"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnToggleMask"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="14dp"
+        android:text="開啟 / 關閉 遮罩"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAdjustMask"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="調整位置 / 大小 / 透明度"
+        android:textSize="18sp" />
+
+    <!-- 直接調整透明度控制列 -->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOpacityDown"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:text="- 更透"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvOpacityValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="遮罩濃度：33%"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnOpacityUp"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:text="+ 更濃"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:text="【三段式微調說明】&#10;1. 藍框（移動）：方向鍵移動位置，按 OK 下一步&#10;2. 黃框（縮放）：上下調高度、左右調寬度，按 OK 下一步&#10;3. 綠框（透明度）：左右鍵調濃淡，按 OK 鎖定完成"
+        android:textColor="#AAAAAA"
+        android:textSize="15sp" />
+</LinearLayout>
